@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <title> Crawdad105 Website </title>
+    <link rel="stylesheet" href="HomePage.css">
+    <script src="HomePage.js"></script>
+    <body>
+        <div class="header">
+            <div style="height: 20px;"></div>
+            - Crawdad105 Website - 
+        </div>
+        <div class="nav-menu">
+            <div style="margin: 0px; margin-top: 15px; display: flex; justify-content: center;">
+                <button class="nav-Button"> Home <div class="nav-Button-sub" ></div> </button>
+                <button onclick="window.location = 'Video.html'" class="nav-Button"> Videos <div class="nav-Button-sub"></div> </button>
+                <button onclick="window.location = '404Page.html'" class="nav-Button"> Games <div class="nav-Button-sub"></div> </button>
+                <button onclick="window.location = '404Page.html'" class="nav-Button"> Socials <div class="nav-Button-sub"></div> </button>
+                <button class="dropdown"> Other 
+                    <div class="nav-Button-sub">
+                        <div class="dropdown-content">
+                            <div onclick="window.location = '404Page.html'" class="dropdown-content-text">404 page</div>
+                        </div>
+                    </div> 
+                </button>
+                <button onclick="window.location = '404Page.html'" class="nav-Button"> About <div class="nav-Button-sub"> </div> 
+                </button>
+                <button class="dropdown"> Shoe 
+                    <div class="nav-Button-sub">
+                        <div class="dropdown-content">
+                            <div class="dropdown-content-displaytext" style="margin-left: 50px;margin-right: 50px;">Shoe</div>
+                            <img onclick="ShoeClick()" class="shoeDrop"src="shoeImg.png" alt="Shoe" style="width: 100px;">
+                            <div id="ShoeClicks" class="dropdown-content-displaytext"></div>
+                            <div class="hidden" id="hiddenButton">
+                                <input id="_clickUpgrade" type="button" value="Upgrade click &#x00A; Cost: 10 shoes" class="Button1" style="margin: 10px;" onclick="upgrade('click')"></input>
+                            </div>
+                            <div class="hidden" id="hiddenButton2">
+                                <input id="_autoUpgrade1" type="button" value="buy shoe factory &#x00A; Cost: 300 shoes &#x00A; [10 shoes/sec]" class="Button1" style="margin: 10px;" onclick="upgrade('factory1')"></input>
+                            </div>
+                        </div>
+                    </div> 
+                </button>
+            </div>
+        </div>
+        <div>
+            <div class="box">
+                <div>
+                    <div class="boxtext"> Who is crawdad105? </div>
+                    <div class="boxtext2">
+                        - Long muty paragram text about <em>crawdad105</em> with many arbitrary words gose here -
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div>
+                    <div class="boxtext"> Title </div>
+                    <div class="boxtext2"> paragraph text </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-menu">
+            <div style="margin: 0px; height: 100px; display:flex; flex-direction: row; justify-content: space-between;">
+                <div style="margin-left: 10px; height: 400px;">
+                    <div class="text" style="font-size: 12px; margin-top: 10px;">Crawdad105 Website</div>
+                </div>
+                <div>
+                    <div class="text" style="font-size: 12px; margin-top: 10px;">For help contact: no one</div>
+                </div>
+                <div style="margin-right: 10px;">
+                    <div class="text" style="font-size: 12px; margin-top: 10px;">Created using html</div>
+                    <div class="text" style="font-size: 12px; margin-top: 10px;">Created by crawdad105</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
