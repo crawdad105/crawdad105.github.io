@@ -1,90 +1,128 @@
 <!DOCTYPE html>
 <html>
     <title> Crawdad105 Website </title>
-    <link rel="stylesheet" href="HomePage.css">
-    <script src="HomePage.js"></script>
+    <link rel="stylesheet" href="indexStyle.css">
+    <script src="ShoeClicker.js"></script>
+    <script defer src="index.js"></script>
     <body>
-        <div class="header">
-            <div style="height: 20px;"></div>
-            - Crawdad105 Website - 
-        </div>
+        <div class="header"> - Crawdad105 Website - </div>
         <div class="nav-menu">
-            <div style="margin: 0px; margin-top: 15px; display: flex; justify-content: center;">
-                <button class="nav-Button"> Home 
-                    <div class="nav-Button-sub" ></div> 
+            <div>
+                <button class="nav-Button"> Home <div class="nav-Button-sub"></div> 
+
                 </button>
 
-                <button onclick="window.location = 'video.html'" class="nav-Button"> Videos 
-                    <div class="nav-Button-sub"></div> 
+                <button onclick="window.location = 'Videos/index.html'" class="nav-Button"> Videos <div class="nav-Button-sub"></div> 
+
                 </button>
 
                 <button class="dropdown"> Games 
-                    <div class="nav-Button-sub">
-                        <div class="dropdown-content">
-                            <div onclick="window.location = 'WodleGame/index.html'" class="dropdown-content-text"> Custom Wordle </div>
-                        </div>
-                    </div> 
+                    <div class="nav-Button-sub"></div> 
+                    <div class="dropdown-content">
+                        <div onclick="window.location = 'WordleGame/index.html'" class="dropdown-content-text"> Custom Wordle </div>
+                    </div>
                 </button>
 
-                <button onclick="window.location = '404Page.html'" class="nav-Button"> Socials 
+                <button class="dropdown"> Socials 
                     <div class="nav-Button-sub"></div> 
+                    <div class="dropdown-content">
+                        <div onclick="window.open('https:/\/www.youtube.com/channel/UCLHObAbEB_SCro0NPLgGeZQ')" 
+                        class="dropdown-content-text"> Youtube </div>
+                        <div onclick="window.open('https:/\/www.crawdad105.com/')" 
+                        class="dropdown-content-text"> Website </div>
+                        <div onclick="window.open('https:/\/discord.com/invite/5NKSqxkckA')" 
+                        class="dropdown-content-text"> Discord </div>
+                        <div onclick="window.open('https:/\/crawdad105.itch.io/')" 
+                        class="dropdown-content-text"> Itch.io </div>
+                        <div onclick="window.open('https:/\/github.com/crawdad105')" 
+                        class="dropdown-content-text"> Github </div>
+                        <div onclick="window.open('https:/\/www.reddit.com/user/crawdad105/')" 
+                        class="dropdown-content-text"> Redit </div>
+                        <div onclick="window.open('https:/\/steamcommunity.com/id/Crawdad105/')" 
+                        class="dropdown-content-text"> Steam </div>
+                        <div onclick="window.open('https:/\/socialblade.com/youtube/channel/UCLHObAbEB_SCro0NPLgGeZQ')" 
+                        class="dropdown-content-text"> Social Blade </div>
+                        <div onclick="window.open('https:/\/www.twitch.tv/crawdad105')" 
+                        class="dropdown-content-text"> Twitch </div>
+                        <div onclick="window.open('https:/\/twitter.com/crawdad105')" 
+                        class="dropdown-content-text"> Twiter / X </div>
+                        <div onclick="window.open('https:/\/legacy.curseforge.com/members/crawdad105/projects')" 
+                        class="dropdown-content-text"> CurseForge </div>
+                        <div onclick="window.open('https:/\/en.everybodywiki.com/Crawdad105')" 
+                        class="dropdown-content-text"> Wiki How </div>
+                        <div onclick="window.open('https:/\/namemc.com/profile/crawdad105.1')" 
+                        class="dropdown-content-text"> NameMC </div>
+                        <div onclick="window.open('https:/\/bean-simulator.fandom.com/wiki/Bean_Simulator_Wiki')" 
+                        class="dropdown-content-text"> Beam Sim Wiki </div>
+                        <div onclick="window.open('https:/\/discord.gg/jys8xtZaz9')" 
+                        class="dropdown-content-text"> Beam Sim Discord </div>
+                        <div onclick="window.open('https:/\/www.minecraftskins.com/skin/17207196/crawdad105/')" 
+                        class="dropdown-content-text"> Minecraft Skin </div>
+                    </div>
                 </button>
 
                 <button class="dropdown"> Other 
-                    <div class="nav-Button-sub">
-                        <div class="dropdown-content">
-                            <div onclick="window.location = '404Page.html'" class="dropdown-content-text">404 page</div>
-                        </div>
-                    </div> 
-                </button>
-
-                <button onclick="window.location = '404Page.html'" class="nav-Button"> About <div class="nav-Button-sub"> </div> 
-                </button>
-
-                <button class="dropdown"> Shoe 
-                    <div class="nav-Button-sub">
-                        <div class="dropdown-content">
-                            <div class="dropdown-content-displaytext" style="margin-left: 50px;margin-right: 50px;">Shoe</div>
-                            <img onclick="ShoeClick()" class="shoeDrop"src="assets/ShoeImg.png" alt="Shoe" style="width: 100px;">
-                            <div id="ShoeClicks" class="dropdown-content-displaytext"></div>
-                            <div class="hidden" id="hiddenButton">
-                                <input id="_clickUpgrade" type="button" value="Upgrade click &#x00A; Cost: 10 shoes" class="Button1" style="margin: 10px;" onclick="upgrade('click')"></input>
-                            </div>
-                            <div class="hidden" id="hiddenButton2">
-                                <input id="_autoUpgrade1" type="button" value="buy shoe factory &#x00A; Cost: 300 shoes &#x00A; [10 shoes/sec]" class="Button1" style="margin: 10px;" onclick="upgrade('factory1')"></input>
-                            </div>
-                        </div>
-                    </div> 
-                </button>
-            </div>
-        </div>
-        <div>
-            <div class="box">
-                <div>
-                    <div class="boxtext"> Who is crawdad105? </div>
-                    <div class="boxtext2">
-                        - Insurt long multy paragraph text about <em>crawdad105</em> with many arbitrary words here -
+                    <div class="nav-Button-sub"> </div> 
+                    <div class="dropdown-content">
+                        <div onclick="window.location = '404/index.html'" class="dropdown-content-text">404 page</div>
                     </div>
-                </div>
-            </div>
-            <div class="box">
-                <div>
-                    <div class="boxtext"> Title </div>
-                    <div class="boxtext2"> Obivuly this website is still in progress, it has many spelling errors and in general mussing many featurs </div>
-                </div>
+                </button>
+
+                <button class="dropdown"> About 
+                    <div class="nav-Button-sub"> </div> 
+                    <div class="dropdown-content">
+                        <div onclick="window.location = 'About/index.html'" class="dropdown-content-text"> Crawdad105 </div>
+                    </div>
+                </button>
+
+                <button class="dropdown"> Shoe <div class="nav-Button-sub"> </div> 
+                    <div class="dropdown-content">
+                        <div class="dropdown-content-displaytext" style="margin-left: 50px;margin-right: 50px;">Shoe</div>
+                        <img onclick="ShoeClick()" class="shoeDrop"src="assets/ShoeImg.png" alt="Shoe" style="width: 100px;">
+                        <div id="ShoeClicks" class="dropdown-content-displaytext"></div>
+                        <div class="hidden" id="hiddenButton">
+                            <input id="_clickUpgrade" type="button" value="Upgrade click &#x00A; Cost: 10 shoes" class="Button1" style="margin: 10px;" onclick="upgrade('click')"></input>
+                        </div>
+                        <div class="hidden" id="hiddenButton2">
+                            <input id="_autoUpgrade1" type="button" value="buy shoe factory &#x00A; Cost: 300 shoes &#x00A; [10 shoes/sec]" class="Button1" style="margin: 10px;" onclick="upgrade('factory1')"></input>
+                        </div>
+                    </div>
+                </button>
             </div>
         </div>
-        <div class="nav-menu">
-            <div style="margin: 0px; height: 100px; display:flex; flex-direction: row; justify-content: space-between;">
-                <div style="margin-left: 10px; height: 400px;">
-                    <div class="text" style="font-size: 12px; margin-top: 10px;">Crawdad105 Website</div>
+        <div class="MainBody">
+            <div class="ImageContainer">
+                <div class="TextContainer">
+                    <h1> Who is crawdad105? </h1>
+                    <p> 
+                        Crawdad105 is known as one of the people who make youtube videos, games, programes and more.
+                    </p>
                 </div>
-                <div>
-                    <div class="text" style="font-size: 12px; margin-top: 10px;">For help contact: no one</div>
+                <img id="1" class="Image" src="assets/Crawdad105Iamge1.png" alt="Image 1" style="width: 30%;">
+                <p onclick="DownloadImage('assets/Crawdad105Iamge1.png', 'Crawdad105Image1.png')"> <span> Large View </span>  </p>
+            </div>
+            <div class="TextContainer">
+                <h1> About this webpage </h1>
+                <p> 
+                    This webpage will evnetuly be the main crawdad105 Website. 
+                    Currenly it is a work in progress but eventualy it will contains all the information and more from the previus webside.
+                </p>
+            </div>
+        </div>
+        <div class="nav-menu footer">
+            <div>
+                <div id="footerLeft">
+                    <p class="text footerText"> Crawdad105 Website </p>
+                    <p class="text footerText"> Website Version: 0.2.2 </p>
+                    <p class="text footerText"> (original site: <a href="https://www.crawdad105.com/"> Crawdad105.com</a>) </p>
                 </div>
-                <div style="margin-right: 10px;">
-                    <div class="text" style="font-size: 12px; margin-top: 10px;">Created using html</div>
-                    <div class="text" style="font-size: 12px; margin-top: 10px;">Created by crawdad105</div>
+                <div id="footerCenter">
+                    <p class="text footerText"> For help contact: Crawdad105@gmail.com </p>
+                </div>
+                <div id="footerRight">
+                    <p class="text footerText"> Created using html </p>
+                    <p class="text footerText"> Created by crawdad105 </p>
+                    <p class="text footerText"> Hosted from: Github </p>
                 </div>
             </div>
         </div>
